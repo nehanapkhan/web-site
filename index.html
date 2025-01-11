@@ -1,0 +1,185 @@
+<!doctype html>
+<head>
+  <title> nevigation</title>
+  <style>
+  body {
+  margin: 0;
+    font-family: arial, helvetica, san-serif;
+  }
+    .topnav{
+      overflow:hidden;
+      background-color:#333;
+    }
+    .topnav a{
+      float:left;
+      color:deepred;
+      text-align:center;
+      padding:14px 16px;
+      text-decoration:none;
+      font-size:17px;
+    }
+    .topnav a:hover{
+     background-color:blueviolet;
+       color:deepskeyblue;
+    }
+    .topnav a.active{
+      background-color:yellowgreen;
+      color:drackcyan;
+    }
+    h1{
+
+text-align: center;
+
+text-decoration: underline;
+
+text-transform: capitalize;
+
+}
+
+.carousel-container {
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+height: 300px; /* Adjust based on your image height */
+
+
+/* Hide all slides by default */
+
+.myslides {
+
+display: none;
+
+max-height: 100%; /* Ensure images fit within container */
+
+max-width: 100%;
+
+}
+ .chai 4.jpeg{
+
+  position:0.70;
+  background-position:center;
+
+background-size:cover;
+
+background-repeat:no-repeat;
+
+background-attachment:fixed;
+ }
+ .chai 4.jpeg{
+  background-image:url{'image.jpg'}
+
+min-height:100%
+ }
+
+
+
+    
+    </style>
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="index.html">HOME</a>
+    <a href ="about.html">about_us</a>
+    <a href ="gallery.html">gallery</a>
+    <a href ="contactus.html">contact_us</a>
+    
+  </div>
+
+  <h1>my chai place app</h1>
+  <div class="carousel-container">
+    <img class="myslides"src="chai 1.png" height="300" width="300" alt="slide 1">
+        <img class="myslides"src="chai 2.jpeg" height="300" width="300" alt="slide 2">
+            <img class="myslides"src="chai 3.jpeg" height="300" width="300" alt="slide 3">
+  </div>
+
+  <span class="border trans" style="font-size:40px;">
+
+    <center>Welcome all to the chai app</center>
+    
+    </span><br>
+    
+    <section class="section section-dark">
+    
+    <h2>section one</h2>
+    
+    <p> Chai (चाय) is the Hindi word for tea, and it's a deeply cherished beverage in many parts of the world, especially in India and South Asia. Here's a bit about chai:
+       <br>
+      Origin:
+      Chai originated in India and has become a cultural staple, often prepared by boiling black tea leaves with water, milk, sugar, and spices.
+    </br>
+    <br>
+      Masala Chai:
+      The most iconic version of chai is masala chai, which includes a blend of spices like cardamom, cinnamon, ginger, cloves, and black pepper. It’s warming and aromatic.
+  </br>
+</br>
+      Social Ritual:
+      In India, chai is more than just a drink; it’s a way of life. People often gather around chai stalls, known as chai wallahs, to chat and share stories.
+</br>
+      Health Benefits:
+      Chai spices like ginger and cardamom are known for their health benefits, including aiding digestion, boosting immunity, and reducing inflammation.
+      
+      Global Popularity:
+      While chai is traditional to South Asia, it has gained immense popularity worldwide. However, in many Western countries, it’s often referred to as "chai tea," which technically means "tea tea."
+      
+      Preparation Variations:
+      Chai preparation can vary by region and household. Some prefer it spicier, others sweeter, and some even add a pinch of salt.
+      
+      Pairings:
+      Chai is often enjoyed with snacks like biscuits, samosas, pakoras, or savory street food.
+      </p>
+    </section>
+
+    
+    <div class="pimg3">
+    
+    <div class="ptext">
+    
+    <span class="border trans">
+    
+    Image two text
+    
+    </span>
+    
+    </div>
+    
+    </div>
+
+
+  <script>
+var index = 0;
+
+function carousel() {
+
+var i;
+
+var x = document.getElementsByClassName("myslides");
+
+for (i = 0; i < x.length; i++) {``
+
+x[i].style.display = "none";
+
+}
+
+index++;
+
+if (index > x.length) {
+
+index = 1;
+
+}
+
+x[index - 1].style.display = "block";
+
+setTimeout(carousel, 2000);
+
+}
+
+carousel(); // Start the carousel when the page loads
+   </script>
+  </body>
+
+  
